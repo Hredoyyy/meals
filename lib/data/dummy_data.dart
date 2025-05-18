@@ -5,23 +5,23 @@ import 'package:meals/models/meal.dart';
 
 // Constants in Dart should be written in lowerCamelcase.
 const availableCategories = [
-  Category(id: 'c1', title: 'Italian', color: Colors.purple),
-  Category(id: 'c2', title: 'Quick & Easy', color: Colors.red),
-  Category(id: 'c3', title: 'Hamburgers', color: Colors.orange),
-  Category(id: 'c4', title: 'German', color: Colors.amber),
-  Category(id: 'c5', title: 'Light & Lovely', color: Colors.blue),
-  Category(id: 'c6', title: 'Exotic', color: Colors.green),
-  Category(id: 'c7', title: 'Breakfast', color: Colors.lightBlue),
-  Category(id: 'c8', title: 'Asian', color: Colors.lightGreen),
-  Category(id: 'c9', title: 'French', color: Colors.pink),
-  Category(id: 'c10', title: 'Summer', color: Colors.teal),
+  Category(id: 'c1', name: 'Italian', color: Colors.purple),
+  Category(id: 'c2', name: 'Quick & Easy', color: Colors.red),
+  Category(id: 'c3', name: 'Hamburgers', color: Colors.orange),
+  Category(id: 'c4', name: 'German', color: Colors.amber),
+  Category(id: 'c5', name: 'Light & Lovely', color: Colors.blue),
+  Category(id: 'c6', name: 'Exotic', color: Colors.green),
+  Category(id: 'c7', name: 'Breakfast', color: Colors.lightBlue),
+  Category(id: 'c8', name: 'Asian', color: Colors.lightGreen),
+  Category(id: 'c9', name: 'French', color: Colors.pink),
+  Category(id: 'c10', name: 'Summer', color: Colors.teal),
 ];
 
 const dummyMeals = [
   Meal(
     id: 'm1',
     categories: ['c1', 'c2'],
-    title: 'Spaghetti with Tomato Sauce',
+    name: 'Spaghetti with Tomato Sauce',
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
     imageUrl:
@@ -52,7 +52,7 @@ const dummyMeals = [
   Meal(
     id: 'm2',
     categories: ['c2'],
-    title: 'Toast Hawaii',
+    name: 'Toast Hawaii',
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
     imageUrl:
@@ -78,7 +78,7 @@ const dummyMeals = [
   Meal(
     id: 'm3',
     categories: ['c2', 'c3'],
-    title: 'Classic Hamburger',
+    name: 'Classic Hamburger',
     affordability: Affordability.pricey,
     complexity: Complexity.simple,
     imageUrl:
@@ -107,7 +107,7 @@ const dummyMeals = [
   Meal(
     id: 'm4',
     categories: ['c4'],
-    title: 'Wiener Schnitzel',
+    name: 'Wiener Schnitzel',
     affordability: Affordability.luxurious,
     complexity: Complexity.challenging,
     imageUrl:
@@ -144,7 +144,7 @@ const dummyMeals = [
           'c5',
       'c10',
     ],
-    title: 'Salad with Smoked Salmon',
+    name: 'Salad with Smoked Salmon',
     affordability: Affordability.luxurious,
     complexity: Complexity.simple,
     imageUrl:
@@ -176,7 +176,7 @@ const dummyMeals = [
   Meal(
     id: 'm6',
     categories: ['c6', 'c10'],
-    title: 'Delicious Orange Mousse',
+    name: 'Delicious Orange Mousse',
     affordability: Affordability.affordable,
     complexity: Complexity.hard,
     imageUrl:
@@ -209,7 +209,7 @@ const dummyMeals = [
   Meal(
     id: 'm7',
     categories: ['c7'],
-    title: 'Pancakes',
+    name: 'Pancakes',
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
     imageUrl:
@@ -238,7 +238,7 @@ const dummyMeals = [
   Meal(
     id: 'm8',
     categories: ['c8'],
-    title: 'Creamy Indian Chicken Curry',
+    name: 'Creamy Indian Chicken Curry',
     affordability: Affordability.pricey,
     complexity: Complexity.challenging,
     imageUrl:
@@ -269,7 +269,7 @@ const dummyMeals = [
   Meal(
     id: 'm9',
     categories: ['c9'],
-    title: 'Chocolate Souffle',
+    name: 'Chocolate Souffle',
     affordability: Affordability.affordable,
     complexity: Complexity.hard,
     imageUrl:
@@ -316,7 +316,7 @@ const dummyMeals = [
   Meal(
     id: 'm10',
     categories: ['c2', 'c5', 'c10'],
-    title: 'Asparagus Salad with Cherry Tomatoes',
+    name: 'Asparagus Salad with Cherry Tomatoes',
     affordability: Affordability.luxurious,
     complexity: Complexity.simple,
     imageUrl:
